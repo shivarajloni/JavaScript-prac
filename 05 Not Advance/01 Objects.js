@@ -6,18 +6,18 @@ var User = function (firstName, courseCount){
     };
 };
 
+  // Proto
 User.prototype.getFirstname = function(){
     console.log(`Your firstname is: ${this.firstName}`);
 }
 
 var shivaraj = new User("Shivaraj", 2);
-shivaraj.getCourseCount();
-shivaraj.getFirstname();
-
-
-// console.log(shivaraj);
+    shivaraj.getCourseCount();
+    shivaraj.getFirstname();
+  console.log(shivaraj.firstName);
+//  console.log(shivaraj);
 
 var sam = new User("sam", 1);
-sam.getCourseCount();
-sam.getFirstname();
-// console.log(sam);
+    sam.getCourseCount();
+    sam.getFirstname();
+//  console.log(sam);
