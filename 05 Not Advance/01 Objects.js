@@ -9,12 +9,21 @@ var User = function (firstName, courseCount){
   // Proto
 User.prototype.getFirstname = function(){
     console.log(`Your firstname is: ${this.firstName}`);
-}
+};
+
 
 var shivaraj = new User("Shivaraj", 2);
     shivaraj.getCourseCount();
-    shivaraj.getFirstname();
-  console.log(shivaraj.firstName);
+    // shivaraj.getFirstname();
+//   console.log(shivaraj.firstName);
+           
+        // Conditional Run
+    if(shivaraj.hasOwnProperty("firstName")) {
+        shivaraj.getFirstname();
+    }        
+       
+
+
 //  console.log(shivaraj);
 
 var sam = new User("sam", 1);
